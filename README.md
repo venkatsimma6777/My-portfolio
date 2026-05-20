@@ -1,55 +1,41 @@
 # 💼 Venkat Simma - Portfolio
 
-Welcome to my personal portfolio website 👋  
-This project showcases my skills, projects, and experience as a Full Stack Developer.
-
----
-
 ## 🚀 Live Demo
-👉 https://your-vercel-link.vercel.app
+ https://your-vercel-link.vercel.app
 
 ---
 
-## 📸 Preview
+## 📌 About Project
+This is my personal portfolio website built using **React.js and Tailwind CSS**.  
+It showcases my skills, projects, and contact information as a Full Stack Developer.
 
-![Portfolio Preview](./preview.png)
-
----
-
-## 🧑‍💻 About Me
-
-Hi, I'm **Venkat Simma**, a passionate Full Stack Web Developer.
-
-I specialize in building:
-- Modern React applications ⚛️
-- Scalable backend systems 🛠️
-- Responsive UI designs 🎨
-
-I enjoy solving problems and continuously improving my development skills through real-world projects.
+The goal of this project is to build a **clean, responsive, and professional portfolio** for internship and job opportunities.
 
 ---
 
 ## 🛠️ Tech Stack
-
-- ⚛️ React.js
-- ⚡ Vite
-- 🎨 Tailwind CSS
-- 🟢 Node.js (learning / backend)
-- 🍃 MongoDB (learning / backend)
-- 🧠 JavaScript (ES6+)
-- 🌐 HTML & CSS
+- React.js
+- Vite
+- Tailwind CSS
+- JavaScript (ES6+)
+- HTML5 & CSS3
 
 ---
 
-## 📂 Features
-
+## ✨ Features
 - Responsive modern UI
-- Smooth scroll navigation
+- Smooth navigation
 - Glassmorphism design
-- Animated hero section
 - Project showcase section
 - Contact section with social links
+- Clean component-based structure
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Setup
+
+```bash
+git clone https://github.com/venkatsimma6777/My-portfolio
+cd My-portfolio
+npm install
+npm run dev
