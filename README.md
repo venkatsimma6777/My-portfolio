@@ -6,7 +6,7 @@ This project showcases my skills, projects, and experience as a Full Stack Devel
 ---
 
 ## 🚀 Live Demo
-👉 (Add your deployed link here once you host it on Vercel/Netlify)
+👉 https://your-vercel-link.vercel.app
 
 ---
 
