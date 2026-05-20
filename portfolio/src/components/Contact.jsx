@@ -1,39 +1,39 @@
-function Contact() {
+export default function Contact() {
   return (
-    <section
-      id="contact"
-      className="py-24 px-6 text-center"
-    >
+    <section id="contact" className="text-center px-6 py-24">
 
-      <h2 className="text-4xl font-bold text-cyan-400 mb-8">
-        Contact Me
-      </h2>
+      <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
 
-      <p className="text-gray-400 mb-10 text-lg">
-        Interested in working together or have a project idea?
+      <p className="text-gray-400 mb-8">
+        Let’s work together or build something amazing 🚀
       </p>
 
-      <div className="flex justify-center gap-6 flex-wrap">
+      <div className="flex gap-4 justify-center flex-wrap">
 
+        {/* EMAIL */}
         <a
           href="mailto:Venkatsimma67@gmail.com"
-          className="bg-cyan-500 px-8 py-4 rounded-2xl font-semibold hover:scale-105 transition"
+          className="px-6 py-2 bg-purple-600 hover:bg-purple-700 rounded-full transition"
         >
-          Send Email
+          Email Me
         </a>
 
+        {/* GITHUB */}
         <a
           href="https://github.com/venkatsimma6777"
           target="_blank"
-          className="border border-cyan-500 px-8 py-4 rounded-2xl font-semibold hover:bg-cyan-500 transition"
+          rel="noopener noreferrer"
+          className="px-6 py-2 border border-white/20 hover:bg-white/10 rounded-full transition"
         >
           GitHub
         </a>
 
+        {/* LINKEDIN */}
         <a
           href="https://www.linkedin.com/in/venkatsimma/"
           target="_blank"
-          className="border border-cyan-500 px-8 py-4 rounded-2xl font-semibold hover:bg-cyan-500 transition"
+          rel="noopener noreferrer"
+          className="px-6 py-2 border border-white/20 hover:bg-white/10 rounded-full transition"
         >
           LinkedIn
         </a>
@@ -43,5 +43,3 @@ function Contact() {
     </section>
   );
 }
-
-export default Contact;

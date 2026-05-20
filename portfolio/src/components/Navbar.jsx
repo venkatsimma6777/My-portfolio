@@ -1,44 +1,22 @@
-import { useState } from "react";
-
-function Navbar() {
-  const [open, setOpen] = useState(false);
-
+export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/30 border-b border-white/10">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-black/30 backdrop-blur-xl border-b border-white/10">
 
-      <div className="flex justify-between items-center p-4 max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
 
-        <h1 className="text-xl font-bold text-cyan-400">
+        <h1 className="text-purple-400 font-bold text-lg">
           Venkat Simma
         </h1>
 
-        <div className="hidden md:flex gap-6 text-gray-300">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+        <div className="hidden md:flex gap-8 text-gray-300">
+          <a href="#home" className="hover:text-white">Home</a>
+          <a href="#about" className="hover:text-white">About</a>
+          <a href="#projects" className="hover:text-white">Projects</a>
+          <a href="#contact" className="hover:text-white">Contact</a>
         </div>
-
-        <button
-          className="md:hidden text-white"
-          onClick={() => setOpen(!open)}
-        >
-          ☰
-        </button>
 
       </div>
-
-      {open && (
-        <div className="md:hidden flex flex-col gap-4 p-4 bg-black/70 text-gray-300">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </div>
-      )}
 
     </nav>
   );
 }
-
-export default Navbar;

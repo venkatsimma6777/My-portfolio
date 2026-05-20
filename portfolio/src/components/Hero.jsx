@@ -1,78 +1,46 @@
-import { motion } from "framer-motion";
-import { Typewriter } from "react-simple-typewriter";
-
-function Hero() {
+export default function Hero() {
   return (
-    <section className="h-screen flex flex-col justify-center items-center text-center px-4 relative overflow-hidden">
+    <section
+      id="home"
+      className="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24"
+    >
+      {/* Name */}
+      <h1 className="text-5xl md:text-6xl font-bold mt-2 bg-gradient-to-r from-purple-400 via-blue-400 to-cyan-400 text-transparent bg-clip-text">
+        Venkat Simma 👋
+      </h1>
 
-      {/* 🌈 Background Glow */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-cyan-900 via-black to-purple-900 animate-pulse opacity-40"></div>
+      {/* Role */}
+      <h2 className="text-xl md:text-2xl text-gray-300 mt-4 font-semibold tracking-wide">
+        Full Stack Developer
+      </h2>
 
-      {/* 👋 Name */}
-      <motion.h1
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        className="text-5xl md:text-6xl font-bold"
-      >
-        Hi, I'm <span className="text-cyan-400">Venkat Simma</span> 👋
-      </motion.h1>
-
-      {/* 🧠 Description */}
-      <p className="mt-4 text-gray-400 text-lg md:text-xl max-w-xl">
+      {/* Description */}
+      <p className="text-gray-400 max-w-xl mt-6 leading-relaxed">
         I build modern, responsive web applications with clean UI and scalable backend systems.
       </p>
 
-      {/* ✨ Typewriter */}
-      <p className="mt-6 text-cyan-300 text-2xl font-semibold">
-        <Typewriter
-          words={[
-            "Full Stack Developer",
-            "React Developer",
-            "MERN Stack Learner",
-          ]}
-          loop={true}
-          cursor
-          cursorStyle="|"
-          typeSpeed={80}
-          deleteSpeed={50}
-          delaySpeed={1200}
-        />
-      </p>
+      {/* Buttons */}
+      <div className="flex gap-4 mt-8 flex-wrap justify-center">
 
-      {/* 🔘 Buttons */}
-      <div className="mt-8 flex gap-5 flex-wrap justify-center">
-
-        {/* View Projects */}
         <a
           href="#projects"
-          className="bg-cyan-500 px-6 py-3 rounded-xl font-semibold hover:scale-105 hover:shadow-lg transition"
+          className="px-6 py-2 bg-purple-600 hover:bg-purple-700 rounded-full transition shadow-lg"
         >
-          View My Work
+          View Projects
         </a>
 
-        {/* View Resume (opens in new tab) */}
         <a
-          href="/Venkat_Simma_Resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="border border-white px-6 py-3 rounded-xl font-semibold hover:bg-white hover:text-black hover:shadow-lg transition"
+          href="#contact"
+          className="px-6 py-2 border border-white/20 hover:bg-white/10 rounded-full transition"
         >
-          View Resume
+          Contact Me
         </a>
 
       </div>
 
-      {/* 💬 Floating Hire Me Button */}
-      <a
-        href="#contact"
-        className="fixed bottom-6 right-6 bg-cyan-500 text-black px-5 py-3 rounded-full font-semibold shadow-lg hover:scale-110 transition"
-      >
-        Hire Me 💬
-      </a>
-
+      {/* subtle glow accent */}
+      <div className="absolute w-72 h-72 bg-purple-600/20 blur-3xl rounded-full top-20 left-10 -z-10"></div>
+      <div className="absolute w-72 h-72 bg-blue-500/20 blur-3xl rounded-full bottom-20 right-10 -z-10"></div>
     </section>
   );
 }
-
-export default Hero;
