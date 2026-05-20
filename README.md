@@ -5,8 +5,7 @@
 
 ---
 ## 📸 Preview
-
-![Portfolio Screenshot](./assets/portfolio.png)
+![Portfolio](./src/assets/portfolio.jpg)
 
 ## 📌 About Project
 This is my personal portfolio website built using **React.js and Tailwind CSS**.  
