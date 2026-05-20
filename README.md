@@ -5,7 +5,15 @@
 
 ---
 ## 📸 Preview
-![Portfolio](./src/assets/portfolio.jpg)
+
+### Portfolio
+![Portfolio](./assets/portfolio.jpg)
+
+### Todo App
+![Todo](./assets/todo.jpg)
+
+### Weather App
+![Weather](./assets/weather.jpg)
 
 ## 📌 About Project
 This is my personal portfolio website built using **React.js and Tailwind CSS**.  
