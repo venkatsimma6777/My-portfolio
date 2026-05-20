@@ -4,6 +4,9 @@
  https://your-vercel-link.vercel.app
 
 ---
+## 📸 Preview
+
+![Portfolio Screenshot](./assets/portfolio.png)
 
 ## 📌 About Project
 This is my personal portfolio website built using **React.js and Tailwind CSS**.  
